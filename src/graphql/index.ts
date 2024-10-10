@@ -117,7 +117,7 @@ export const getBlogDetails = async (slug: string) => {
                     html
                     markdown
                 }
-                categories {
+                categorie {
                     id
                     name
                     slug
