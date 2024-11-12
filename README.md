@@ -1,7 +1,6 @@
 # John Moura - Full Stack Developer 👨‍💻
 
-![Screenshot (725)](https://github.com/Shreyas-29/portfolio-shreyas/assets/111555846/b7ab4ad2-e499-4741-bf48-52970d4e4f57)
-
+<img src="./public/images/landing.png">
 
 Welcome to my Portfolio website! Here you'll find a collection of projects showcasing my skills as a Full Stack Developer.
 
@@ -27,8 +26,7 @@ Welcome to my Portfolio website! Here you'll find a collection of projects showc
 
 ## Let's Connect:
 
-- [LinkedIn](https://www.linkedin.com/in/shreyas-sihasane-441b95238) - Connect with me on LinkedIn for professional networking.
-- [Portfolio Website](https://shreyas-sihasane.vercel.app/) - Explore my portfolio website to learn more about my work.
-- [Twitter](https://twitter.com/_shreyas_ms_) - Connect with me on Twitter.
+- [LinkedIn](https://www.linkedin.com/in/jovimoura10/) - Connect with me on LinkedIn for professional networking.
+- [Portfolio Website](https://jovimoura.vercel.app/) - Explore my portfolio website to learn more about my work.
 
 Feel free to explore the repositories and don't hesitate to reach out for collaboration or any questions!
