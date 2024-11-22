@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import { WordPullUp } from '../ui/word-pull-up';
 
 interface Props {
     title: string
@@ -25,9 +26,10 @@ const Heading = ({ title }: Props) => {
             }}
             className="w-full mx-auto mb-8"
         >
-            <h2 className="mb-8 text-4xl md:text-5xl tracking-wide text-white !leading-[1.5] text-center font-semibold capitalize">
-                {title}
-            </h2>
+            <WordPullUp
+            className="mb-8 text-4xl md:text-5xl tracking-wide text-white !leading-[1.5] text-center font-semibold capitalize"
+            words={title}
+            />
         </motion.div>
     )
 };

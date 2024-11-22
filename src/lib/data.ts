@@ -38,11 +38,22 @@ export const projects = [
         description: 'RezzumeAI simplifies the analysis of texts in PDFs through artificial intelligence, allowing interactions for content comprehension.',
         github: 'https://www.rezzumeai.com',
         view: 'https://www.rezzumeai.com',
-        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'mongodb', 'openai'],
+        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'openai'],
         image: [{
             url: 'asdlasda'
         }],
         banner: '/projects/rezzumeai.png'
+    },
+    {
+        title: 'ContrateAI',
+        description: 'ContrateAI simplifies the way that you create contract with artificial intelligence, allowing interactions for content comprehension.',
+        github: 'https://www.contrateai.com',
+        view: 'https://www.contrateai.com',
+        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'openai'],
+        image: [{
+            url: 'asdlasda'
+        }],
+        banner: '/projects/contrateai.png'
     },
     {
         title: 'My Lunch',

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import AnimationContainer from '../utils/AnimationContainer'
+import TypingAnimation from '../ui/typing-animation'
 
 const Hero = () => {
     return (
@@ -9,9 +10,10 @@ const Hero = () => {
                     Salutations, Code Artist{" "}
                     <span className="text-white">🚀</span>
                 </h3>
-                <h1 className="py-2 text-xl font-bold text-white lg:py-4 sm:text-3xl lg:text-5xl">
-                    John Moura
-                </h1>
+                <TypingAnimation
+                    className="py-2 text-xl font-bold text-white lg:py-4 sm:text-3xl lg:text-5xl"
+                    text="John Moura"
+                    />
                 <h3 className="text-base text-center lg:text-start lg:text-lg text-white/80">
                     <span className="font-medium text-white">
                         Bridging Code and Design{" "}
