@@ -36,7 +36,7 @@ export const projects = [
     {
         title: 'SevenLabz',
         description: 'SevenLabz its a AI Audio Platform that I made to help content creators of Tiktok, Instagram and Youtube.',
-        github: 'https://sevenlabz.vercel.app',
+        github: 'https://github.com/jovimoura/sevenlabs',
         view: 'https://sevenlabz.vercel.app',
         stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'shadcn', 'magic ui', 'elevenlabsapi'],
         image: [{
