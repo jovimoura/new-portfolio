@@ -34,15 +34,15 @@ export const projects = [
         banner: '/projects/yoresume.png'
     },
     {
-        title: 'RezzumeAI',
-        description: 'RezzumeAI simplifies the analysis of texts in PDFs through artificial intelligence, allowing interactions for content comprehension.',
-        github: 'https://www.rezzumeai.com',
-        view: 'https://www.rezzumeai.com',
-        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'openai'],
+        title: 'SevenLabz',
+        description: 'SevenLabz its a AI Audio Platform that I made to help content creators of Tiktok, Instagram and Youtube.',
+        github: 'https://sevenlabz.vercel.app',
+        view: 'https://sevenlabz.vercel.app',
+        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'shadcn', 'magic ui', 'elevenlabsapi'],
         image: [{
             url: 'asdlasda'
         }],
-        banner: '/projects/rezzumeai.png'
+        banner: '/projects/sevenlabz.png'
     },
     {
         title: 'ContrateAI',
