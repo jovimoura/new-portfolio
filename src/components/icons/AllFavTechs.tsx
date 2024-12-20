@@ -2,7 +2,7 @@
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/Tooltip";
 import { motion } from 'framer-motion';
-import { SiNextdotjs, SiNodedotjs, SiReact, SiRedux, SiTailwindcss, SiTypescript, SiTrpc, SiMongodb, SiPrisma } from "react-icons/si";
+import { SiNextdotjs, SiNodedotjs, SiReact, SiRedux, SiTailwindcss, SiTypescript, SiTrpc, SiMongodb, SiPrisma, SiVuedotjs, SiAngular, SiRemix } from "react-icons/si";
 
 const AllFavTechs = () => {
 
@@ -56,6 +56,51 @@ const AllFavTechs = () => {
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>React</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </motion.li>
+                    <motion.li
+                        variants={animation}
+                        className="opacity-100"
+                    >
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#42b883]">
+                                    <SiVuedotjs className="w-6 h-6" />
+                                </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>VueJS</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </motion.li>
+                    <motion.li
+                        variants={animation}
+                        className="opacity-100"
+                    >
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#f637e3]">
+                                    <SiAngular className="w-6 h-6" />
+                                </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Angular</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </motion.li>
+                    <motion.li
+                        variants={animation}
+                        className="opacity-100"
+                    >
+                        <Tooltip>
+                            <TooltipTrigger>
+                                <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#f44251]">
+                                    <SiRemix className="w-6 h-6" />
+                                </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Remix</p>
                             </TooltipContent>
                         </Tooltip>
                     </motion.li>
