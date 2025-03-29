@@ -1,6 +1,7 @@
 "use client";
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { MantineProvider } from '@mantine/core';
 import React from 'react';
 import { Toaster } from '../ui/Sonner';
 import { Nprogress } from './Nprogress';
@@ -13,11 +14,16 @@ const Providers = ({
     const queryClient = new QueryClient();
 
     return (
+        <MantineProvider>
         <QueryClientProvider client={queryClient}>
-            <Nprogress />
-            <Toaster />
+            {/* <Nprogress /> */}
+            <Toaster
+                    richColors
+                    theme="dark"
+                    position="top-center"
+                />
             {children}
-        </QueryClientProvider>
+        </QueryClientProvider></MantineProvider>
     )
 };
 

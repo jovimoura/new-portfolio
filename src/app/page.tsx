@@ -1,10 +1,11 @@
-import { GradientBackground, HomeSection, SectionContainer } from '@/components';
+import { GradientBackground } from '@/components';
+import HomeSection from '@/components/sections/home';
 import React from 'react';
 
 const Home = () => {
     return (
         <GradientBackground>
-            <main className="relative flex flex-col items-center justify-center px-4 !z-[999] pt-20">
+            <main className="relative min-h-screen">
                 <HomeSection />
             </main>
         </GradientBackground>

@@ -1,64 +1,54 @@
 "use client";
 
-import { motion, useAnimation } from 'framer-motion';
+// import { motion, useAnimation } from 'framer-motion';
 import React, { useEffect } from 'react';
-import AnimationContainer from './AnimationContainer';
+// import AnimationContainer from './AnimationContainer';
+import { AnimatedGrid } from '../ui/animated-grid';
 
 const GradientBackground = ({ children }: { children: React.ReactNode }) => {
 
-    const controls = useAnimation();
+    // const controls = useAnimation();
 
-    useEffect(() => {
-        let animationCancelled = false;
+    // useEffect(() => {
+    //     let animationCancelled = false;
 
-        const startAnimation = async () => {
-            while (!animationCancelled) {
-                await controls.start({
-                    x: [0, 80, 0, -80, 0],
-                    y: [0, -80, 0, 80, 0],
-                    transition: { duration: 8, repeat: Infinity },
-                });
-            }
-        };
+    //     const startAnimation = async () => {
+    //         while (!animationCancelled) {
+    //             await controls.start({
+    //                 x: [0, 80, 0, -80, 0],
+    //                 y: [0, -80, 0, 80, 0],
+    //                 transition: { duration: 8, repeat: Infinity },
+    //             });
+    //         }
+    //     };
 
-        startAnimation();
+    //     startAnimation();
 
-        // Cleanup function to stop animation when the component is unmounted
-        return () => {
-            animationCancelled = true;
-            controls.stop();
-        };
-    }, [controls]);
+    //     // Cleanup function to stop animation when the component is unmounted
+    //     return () => {
+    //         animationCancelled = true;
+    //         controls.stop();
+    //     };
+    // }, [controls]);
 
     return (
-        <AnimationContainer>
-            <div className="min-h-screen w-full bg-[#080809]">
+        <div className="w-full relative min-h-screen">
 
-                <div className="absolute inset-0 z-[20] bg-grid-neutral-600/20 hidden lg:flex"></div>
-
-                <div className="absolute z-[20] inset-0 items-center justify-center bg-[#080809] [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)] hidden lg:flex"></div>
-
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: false }}
-                    transition={{ duration: 0.2, ease: 'easeInOut' }}
-                    animate={controls}
-                    className="bg-sky-500/30 z-[15] w-[30rem] left-[45%] top-[5rem] absolute h-[18rem] blur-[11rem] rounded-full hidden lg:flex"
-                />
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: false }}
-                    transition={{ duration: 0.2, ease: 'easeInOut' }}
-                    animate={controls}
-                    className="bg-violet-500/30 z-[15] absolute w-[30rem] right-[45%] top-[5rem] h-[18rem] mt-[5rem] blur-[11rem] rounded-full hidden lg:flex"
+            <div className="h-screen absolute z-0 w-full">
+                <AnimatedGrid
+                    numSquares={15}
+                    maxOpacity={0.1}
+                    duration={6}
+                    className="inset-x-0 h-3/4 z-10"
                 />
 
-                {children}
-
+                <div className="bg-gradient-to-t from-background z-20 h-3/4 w-full absolute inset-x-0 top-[60% top-[10%]"></div>
             </div>
-        </AnimationContainer>
+
+            <div className="aspect-square size-[280px] lg:size-[565px] absolute left-1/2 -translate-x-1/2 top-0 lg:top-[-200px] bg-[radial-gradient(50%_50%_at_50%_50%,rgba(98,98,115,0.8)_0%,rgba(98,98,115,0)_100%)] rounded-full blur-[4rem] lg:blur-[14rem] z-10"></div>
+
+            {children}
+        </div>
     )
 };
 

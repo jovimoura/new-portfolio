@@ -1,84 +1,80 @@
 "use client";
 
-import { getBlogs } from '@/graphql';
-import { BlogProps } from '@/types';
-import { useEffect, useState } from 'react';
-import BlogList from '../contents/BlogList';
-import Tags from '../contents/Tags';
-import AnimationContainer from '../utils/AnimationContainer';
-import Heading from '../utils/Heading';
-import Searchbar from '../utils/Searchbar';
-import SectionContainer from '../utils/SectionContainer';
+import { getBlogs } from "@/graphql";
+import { BlogProps } from "@/types";
+import { useEffect, useState } from "react";
+import BlogList from "../contents/BlogList";
+import Tags from "../contents/Tags";
+import Heading from "../utils/Heading";
+import Searchbar from "../utils/Searchbar";
+import { Wrapper } from "../wrapper";
+import { AnimationContainer } from "../animation-container";
 
 const BlogSection = () => {
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [blogs, setBlogs] = useState<BlogProps[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [filteredBlogs, setFilteredBlogs] = useState<BlogProps[]>([]);
 
-    const [searchQuery, setSearchQuery] = useState<string>('');
-    const [blogs, setBlogs] = useState<BlogProps[]>([]);
-    const [isLoading, setIsLoading] = useState<boolean>(true);
-    const [filteredBlogs, setFilteredBlogs] = useState<BlogProps[]>([]);
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
 
-    const handleSearch = (query: string) => {
-        setSearchQuery(query);
+    const data = blogs?.map((item: any) => item.node);
+    let a = blogs.some;
 
-        const data = blogs?.map((item: any) => item.node);
-        let a = blogs.some
+    const filtered = data?.filter(
+      (blog: any) =>
+        blog.title.toLowerCase().includes(query.toLowerCase()) ||
+        // NOTE: we want to check if at least one category's name includes the query so we used some here
+        blog.categories.some((category: any) =>
+          category.name.toLowerCase().includes(query.toLowerCase())
+        )
+    );
 
-        const filtered = data?.filter((blog: any) =>
-            blog.title.toLowerCase().includes(query.toLowerCase()) ||
-            // NOTE: we want to check if at least one category's name includes the query so we used some here
-            blog.categories.some((category: any) =>
-                category.name.toLowerCase().includes(query.toLowerCase())
-            )
-        );
+    setFilteredBlogs(filtered);
+  };
 
-        setFilteredBlogs(filtered);
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      try {
+        const data = await getBlogs();
+        setBlogs(data);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error);
+        setIsLoading(false);
+      }
     };
 
-    useEffect(() => {
-        const fetchBlogs = async () => {
-            try {
-                const data = await getBlogs();
-                setBlogs(data);
-                setIsLoading(false);
-            } catch (error) {
-                console.log(error);
-                setIsLoading(false);
-            }
-        };
+    fetchBlogs();
+  }, []);
 
-        fetchBlogs();
-    }, []);
+  return (
+    <Wrapper>
+      <div className="flex flex-col items-start w-full mt-0 lg:mt-8">
+        <Heading title="Blog" />
+        <AnimationContainer className="w-full flex flex-col mb-8">
+          <p className="text-base text-justify lg:leading-8 text-foreground/80">
+            Welcome to my digital notebook! Here I write about the interesting
+            problems I've solved, share tips and tricks I wish I knew earlier,
+            and document my journey through the world of software development.
+            No fancy jargon, just honest experiences and helpful insights.
+          </p>
+        </AnimationContainer>
 
+        <Searchbar searchQuery={searchQuery} handleSearch={handleSearch} />
 
-    return (
-        <SectionContainer>
-            <div className="flex flex-col items-start w-full mt-0 lg:mt-8">
+        <Tags />
 
-                <Heading title="Blog" />
-
-                <AnimationContainer customClassName="w-full flex flex-col mb-8">
-                    <p className="text-base text-justify lg:text-center lg:leading-8 text-neutral-200">
-                        Discover a digital playground where innovation meets imagination, turning ideas into living, breathing projects. Unleash the power of code and embark on a journey of crafted stories and captivating experiences.
-                    </p>
-                </AnimationContainer>
-
-                <Searchbar
-                    searchQuery={searchQuery}
-                    handleSearch={handleSearch}
-                />
-
-                <Tags />
-
-                <BlogList
-                    blogs={blogs}
-                    isLoading={isLoading}
-                    searchQuery={searchQuery}
-                    filteredBlogs={filteredBlogs}
-                />
-
-            </div>
-        </SectionContainer>
-    )
+        <BlogList
+          blogs={blogs}
+          isLoading={isLoading}
+          searchQuery={searchQuery}
+          filteredBlogs={filteredBlogs}
+        />
+      </div>
+    </Wrapper>
+  );
 };
 
-export default BlogSection
+export default BlogSection;

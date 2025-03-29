@@ -6,7 +6,7 @@ interface Props {
     stacks: string[];
 }
 
-const ShowSkills = ({ stacks }: Props) => {
+export const ShowSkills = ({ stacks }: Props) => {
     return (
         <>
             {stacks.map((stack) => (
@@ -27,4 +27,3 @@ const ShowSkills = ({ stacks }: Props) => {
     )
 };
 
-export default ShowSkills
