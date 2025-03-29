@@ -21,7 +21,6 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ blog, ...rest }) =>
         }
 
         const codeBlockText = modifiedText?.[0]?.children?.map((child: any) => child);
-        console.log('codeBlockText', codeBlockText);
 
         // switch (type) {
         //     case 'heading-one':

@@ -77,17 +77,17 @@ export const projects = [
         }],
         banner: '/projects/easyai.png'
     },
-    {
-        title: 'JM Spend',
-        description: 'Financial Control App.',
-        github: 'https://play.google.com/store/apps/details?id=com.jovimoura.jmspend',
-        view: 'https://play.google.com/store/apps/details?id=com.jovimoura.jmspend',
-        stack: ['react-native', 'tailwindcss', 'typescript', 'expo'],
-        image: [{
-            url: 'asdlasda'
-        }],
-        banner: '/projects/jm-design.png'
-    },
+    // {
+    //     title: 'JM Spend',
+    //     description: 'Financial Control App.',
+    //     github: 'https://play.google.com/store/apps/details?id=com.jovimoura.jmspend',
+    //     view: 'https://play.google.com/store/apps/details?id=com.jovimoura.jmspend',
+    //     stack: ['react-native', 'tailwindcss', 'typescript', 'expo'],
+    //     image: [{
+    //         url: 'asdlasda'
+    //     }],
+    //     banner: '/projects/jm-design.png'
+    // },
     {
         title: 'J.M. Shop',
         description: 'Its a fake ecommerce that I developed to sell iphones.',

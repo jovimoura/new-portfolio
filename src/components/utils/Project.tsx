@@ -1,9 +1,8 @@
 import { Project as ProjectProps } from '@/types';
+import { ExternalLinkIcon } from "lucide-react";
 import Link from 'next/link';
-import { SiGithub } from "react-icons/si";
-import { TbExternalLink } from "react-icons/tb";
+import Icons from "../ui/icons";
 import { Button } from '../ui/Button';
-import AnimationContainer from './AnimationContainer';
 import Image from 'next/image';
 
 interface Props {
@@ -31,38 +30,32 @@ const Project = ({ project }: Props) => {
     };
 
     return (
-        <AnimationContainer customClassName='bg-[#080809] border border-border/50 w-full hover:border-neutral-800 rounded-xl'>
-
-            <div className="flex-col items-start p-4 h-full flex lg:p-5">
-                <Image className='rounded-2xl w-full mb-3' width={295} height={160} alt={`${project.title}-image`} src={project?.banner} />
-                <h4 className="text-lg font-medium text-neutral-100">
-                    {project?.title}
+        <div className='w-full rounded-xl'>
+            <div className="flex flex-col p-2 lg:p-4">
+            <Image className='rounded-2xl w-full mb-3' width={295} height={160} alt={`${project.title}-image`} src={project?.banner} />
+                <h4 className="text-lg font-medium">
+                    {project.title}
                 </h4>
-                <p className="mt-3 text-sm text-neutral-300 flex-1">
-                    {truncateDescription(project?.description)}
+                <p className="text-sm text-foreground/80 mt-2">
+                    {truncateDescription(project.description)}
                 </p>
-                <div className="flex items-start w-full gap-4 mt-3">
+                <div className="flex gap-x-4 mt-4">
                     <Link href={project.github} target="_blank">
                         <Button variant="outline" size="sm">
-                            <SiGithub className="w-5 h-5" />
-                            <span className="ml-2">
-                                Github
-                            </span>
+                            <Icons.github className="size-4 mr-2" />
+                            GitHub
                         </Button>
                     </Link>
                     <Link href={project.view} target="_blank">
                         <Button variant="outline" size="sm">
-                            <TbExternalLink className="w-5 h-5" />
-                            <span className="ml-2">
-                                View
-                            </span>
+                            <ExternalLinkIcon className="size-4 mr-2" />
+                            View
                         </Button>
                     </Link>
                 </div>
             </div>
-
-        </AnimationContainer>
+        </div>
     )
-}
+};
 
 export default Project

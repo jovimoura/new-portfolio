@@ -4,7 +4,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { motion } from 'framer-motion';
 import { SiNextdotjs, SiNodedotjs, SiReact, SiRedux, SiTailwindcss, SiTypescript, SiTrpc, SiMongodb, SiPrisma, SiVuedotjs, SiAngular, SiRemix } from "react-icons/si";
 
-const AllFavTechs = () => {
+export const AllFavTechs = () => {
 
     const animation = {
         hide: { x: -8, opacity: 0 },
@@ -17,7 +17,7 @@ const AllFavTechs = () => {
                 initial={animation.hide}
                 animate={animation.show}
                 transition={{ delay: 0.2 }}
-                className="mb-3 text-base text-center text-neutral-300 lg:text-start"
+                className="text-4xl lg:text-5xl font-medium text-foreground/80"
             >
                 My current favorite tech stack:
             </motion.p>
@@ -36,7 +36,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-white">
-                                    <SiNextdotjs className="w-6 h-6" />
+                                    <SiNextdotjs className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -51,7 +51,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#61DAFB]">
-                                    <SiReact className="w-6 h-6" />
+                                    <SiReact className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -66,7 +66,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#42b883]">
-                                    <SiVuedotjs className="w-6 h-6" />
+                                    <SiVuedotjs className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -81,7 +81,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#f637e3]">
-                                    <SiAngular className="w-6 h-6" />
+                                    <SiAngular className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -96,7 +96,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#f44251]">
-                                    <SiRemix className="w-6 h-6" />
+                                    <SiRemix className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -111,7 +111,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#3178C6]">
-                                    <SiTypescript className="w-6 h-6" />
+                                    <SiTypescript className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -126,7 +126,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#38B2AC]">
-                                    <SiTailwindcss className="w-6 h-6" />
+                                    <SiTailwindcss className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -141,7 +141,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#8CC84B]">
-                                    <SiNodedotjs className="w-6 h-6" />
+                                    <SiNodedotjs className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -156,7 +156,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#764ABC]">
-                                    <SiRedux className="w-6 h-6" />
+                                    <SiRedux className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -171,7 +171,7 @@ const AllFavTechs = () => {
                         <Tooltip>
                             <TooltipTrigger>
                                 <div className="transition duration-300 ease-out text-neutral-700 hover:text-[#16a394]">
-                                    <SiPrisma className="w-6 h-6" />
+                                    <SiPrisma className="w-10 h-10" />
                                 </div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -185,4 +185,3 @@ const AllFavTechs = () => {
     )
 };
 
-export default AllFavTechs
