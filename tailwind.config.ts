@@ -80,7 +80,12 @@ const config = {
       },
     },
     fontFamily: {
-      aeonikFont: ["var(--font-aeonik)"],
+      heading: [
+  			'var(--font-heading)'
+  		],
+  		base: [
+  			'var(--font-base)'
+  		]
     }
   },
   plugins: [
