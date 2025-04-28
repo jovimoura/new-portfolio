@@ -1,4 +1,5 @@
-import { BlogSection } from '@/components'
+// import { BlogSection } from '@/components'
+import BlogSection from '@/components/sections/BlogSection'
 import React from 'react'
 
 const Blogs = () => {

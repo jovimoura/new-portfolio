@@ -1,4 +1,5 @@
-import { ProjectSection } from '@/components'
+// import { ProjectSection } from '@/components'
+import ProjectSection from '@/components/sections/ProjectSection';
 import React from 'react'
 
 const Projects = () => {

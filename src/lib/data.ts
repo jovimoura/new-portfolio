@@ -27,7 +27,7 @@ export const projects = [
         description: 'YoResume is a resume platform that creates CVs to pass analyzes carried out by AIs – writing, editing, formatting and optimization.',
         github: 'https://www.yoresume.work/',
         view: 'https://www.yoresume.work/',
-        stack: ['nextjs', 'tailwindcss', 'typescript', 'prisma', 'mongodb'],
+        stack: ['nextjs', 'tailwindcss', 'typescript', 'prisma', 'mongodb', 'zustand'],
         image: [{
             url: 'asdlasda'
         }],
@@ -38,7 +38,7 @@ export const projects = [
         description: 'SevenLabz its a AI Audio Platform that I made to help content creators of Tiktok, Instagram and Youtube.',
         github: 'https://github.com/jovimoura/sevenlabs',
         view: 'https://sevenlabz.vercel.app',
-        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'shadcn', 'magic ui', 'elevenlabsapi'],
+        stack: ['nextjs', 'tailwindcss', 'typescript', 'trpc', 'prisma', 'postgresql', 'shadcnui', 'magic ui', 'elevenlabsapi'],
         image: [{
             url: 'asdlasda'
         }],

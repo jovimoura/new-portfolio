@@ -1,4 +1,3 @@
-import { Providers } from "@/components";
 import { cn } from "@/lib/utils";
 import { base, heading } from "@/lib/font";
 import "@/styles/globals.css";
@@ -6,6 +5,7 @@ import { ColorSchemeScript } from '@mantine/core';
 import "@mantine/core/styles.css";
 import Head from "./head";
 import { Navbar } from "@/components/navbar";
+import Providers from "@/components/utils/Providers";
 
 export default function RootLayout({
     children,
