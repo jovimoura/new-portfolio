@@ -9,8 +9,6 @@ import Icons from "./ui/icons";
 
 import { NumberTicker } from "./number-ticker";
 import { AnimationContainer } from "./animation-container";
-import { AllFavTechs } from "./icons/AllFavTechs";
-import AllLearningTechs from "./icons/AllLearningTechs";
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -154,18 +152,6 @@ export const Hero = () => {
           </div>
         </AnimationContainer>
       )}
-
-      {/* {isInView && (
-        <AnimationContainer
-          delay={0.2}
-          animation="slide-up"
-          className="flex flex-col items-center justify-center my-32"
-        >
-          <AllFavTechs />
-
-          <AllLearningTechs />
-        </AnimationContainer>
-      )} */}
     </div>
   );
 };

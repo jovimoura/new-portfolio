@@ -1,6 +1,5 @@
 import { AnimationContainer } from "./animation-container";
 
-
 export const AboutMe = () => {
     return (
         <div className="w-full relative pt-10 pb-20 z-40">

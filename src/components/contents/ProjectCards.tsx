@@ -1,33 +1,12 @@
 "use client";
 
-// import { getProjects } from '@/graphql';
 import { Project as ProjectProps } from "@/types";
-import { useEffect, useState } from "react";
-import { Skeleton } from "../ui/Skeleton";
-
 import Card from "../utils/Card";
 import { projects } from "@/lib/data";
 import { MagicCard } from "../ui/magic-card";
 import { AnimationContainer } from "../animation-container";
 
 const ProjectCards = () => {
-  // const [projects, setProjects] = useState<ProjectProps[]>([]);
-  // const [isLoading, setIsLoading] = useState(true);
-
-  // useEffect(() => {
-  //     try {
-  //         const fetchProjects = async () => {
-  //             const data = await getProjects();
-  //             setProjects(data);
-  //             setIsLoading(false);
-  //         };
-  //         fetchProjects();
-  //     } catch (error) {
-  //         console.log(error);
-  //         setIsLoading(false);
-  //     }
-  // }, []);
-
   const data = projects;
 
   return (
