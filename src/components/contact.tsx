@@ -76,7 +76,7 @@ export const Contact = () => {
         <div className="flex flex-col items-center justify-center w-full gap-5 lg:flex-row">
           <Link
             href="mailto:joaovictors.mouraa@gmail.com"
-            className="flex-[0.5] w-full lg:w-auto"
+            className="w-full"
           >
             <Button
               type="button"
@@ -89,7 +89,7 @@ export const Contact = () => {
               </p>
             </Button>
           </Link>
-          <Link
+          {/* <Link
             href="https://wa.link/v661nu"
             className="flex-[0.5] w-full lg:w-auto"
           >
@@ -103,7 +103,7 @@ export const Contact = () => {
                 +55 21 984954753
               </p>
             </Button>
-          </Link>
+          </Link> */}
         </div>
 
         <Form {...form}>

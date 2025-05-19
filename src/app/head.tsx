@@ -26,7 +26,7 @@ const Head = () => {
             <meta property='og:url' content={`https://jovimoura.vercel.app${pathname}`} />
             <link rel='canonical' href={`https://jovimoura.vercel.app${pathname}`} />
             <link rel='me' href='mailto:joaovictors.mouraa@gmail.com' />
-            <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+            <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
             <meta property='og:type' content={meta.type} />
             <meta property='og:site_name' content='John Moura' />
             <meta property='og:description' content={meta.description} />
