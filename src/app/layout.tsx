@@ -19,7 +19,7 @@ export default function RootLayout({
                 <Head />
                 <link
                     rel="preload"
-                    href="/images/photo.png"
+                    href="/images/photo.jpg"
                     as="image"
                 />
             </head>

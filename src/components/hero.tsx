@@ -23,7 +23,7 @@ export const Hero = () => {
       >
         <div className="size-32 rounded-full bg-[#050505] mx-auto overflow-hidden group border-2 border-transparent hover:border-border transition-all duration-300">
           <Image
-            src="/images/photo.png"
+            src="/images/photo.jpg"
             alt="hero"
             width={128}
             height={128}
