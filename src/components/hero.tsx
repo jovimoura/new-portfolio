@@ -9,10 +9,11 @@ import Icons from "./ui/icons";
 
 import { NumberTicker } from "./number-ticker";
 import { AnimationContainer } from "./animation-container";
+import { useLocalization } from "@/providers/localization-provider";
 
 export const Hero = () => {
   const ref = useRef(null);
-
+  const { localized } = useLocalization();
   const isInView = useInView(ref, { once: true });
 
   return (
@@ -23,7 +24,7 @@ export const Hero = () => {
       >
         <div className="size-32 rounded-full bg-[#050505] mx-auto overflow-hidden group border-2 border-transparent hover:border-border transition-all duration-300">
           <Image
-            src="/images/photo.jpg"
+            src="/images/photo1.jpeg"
             alt="hero"
             width={128}
             height={128}
@@ -107,7 +108,7 @@ export const Hero = () => {
         <Link href="#contact">
           <button className="relative py-3 text-[15px] tracking-wider font-medium overflow-hidden rounded-lg bg-[#3b82f6] text-white transition-all duration-300 group btn-primary flex items-center justify-center w-52 h-auto">
             <span className="relative z-10 font-medium font-heading">
-              Let&apos;s Work Together
+              {localized['lets-work-together']}
             </span>
             <span className="flex items-center justify-center scale-x-0 group-hover:scale-x-100 transition-all duration-300 size-0 group-hover:size-5 ml-1">
               <ChevronRightIcon className="size-5" />

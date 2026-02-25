@@ -16,6 +16,7 @@ import {
 } from "./ui/Tooltip";
 import { AnimationContainer } from "./animation-container";
 import { buttonVariants } from "./ui/Button";
+import { LangSwitcher } from "./lang-switcher";
 
 const DATA = {
   navbar: LINKS,
@@ -104,6 +105,8 @@ export const Navbar = () => {
                 </Tooltip>
               </DockIcon>
             ))}
+            <Separator orientation="vertical" className="h-full" />
+            <LangSwitcher />
           </Dock>
         </TooltipProvider>
       </AnimationContainer>
