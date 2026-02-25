@@ -1,14 +1,13 @@
 "use client";
 
-import React, { useRef, useState } from 'react';
-import { AnimatePresence, Variants, motion, useAnimation } from 'framer-motion';
+import React from 'react';
+import { AnimatePresence, Variants, motion } from 'framer-motion';
 import { IoCheckmarkCircle } from 'react-icons/io5';
 import { IoIosPaperPlane } from 'react-icons/io';
 import { cn } from '@/lib/utils';
 import { buttonVariants } from './Button';
 import { LuLoader } from "react-icons/lu";
-import { UseMutateFunction } from '@tanstack/react-query';
-import { FieldErrors } from 'react-hook-form';
+import { useLocalization } from '@/providers/localization-provider';
 
 interface Props {
     isSent: boolean;
@@ -18,6 +17,7 @@ interface Props {
 }
 
 const SendButton = ({ isSent, isLoading, setIsSent, disabled }: Props) => {
+    const { localized } = useLocalization();
 
     const iconVariants: Variants = {
         open: {
@@ -64,7 +64,7 @@ const SendButton = ({ isSent, isLoading, setIsSent, disabled }: Props) => {
                     "text-neutral-900",
                     isLoading ? "ml-0" : "ml-5"
                 )}>
-                    {isLoading ? "Sending..." : isSent ? "Sent" : "Send Message"}
+                    {isLoading ? localized["send-button-sending"] : isSent ? localized["send-button-sent"] : localized["send-button-label"]}
                 </span>
 
                 {isLoading ? (

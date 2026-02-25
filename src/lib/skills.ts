@@ -1,18 +1,18 @@
 export const skills = [
   {
-    title: "Languages",
+    titleKey: "skills-languages" as const,
     stack: ["HTML", "CSS", "JavaScript", "TypeScript", "Swift", "Ruby"],
   },
   {
-    title: "Frontend Frameworks",
+    titleKey: "skills-frontend-frameworks" as const,
     stack: ["React", "Next.js", "React Native", "Vue.js", "Vite"],
   },
   {
-    title: "Javascript Libraries",
+    titleKey: "skills-javascript-libraries" as const,
     stack: ["React Query", "Zustand", "Emotion", "Axios", "SWR"],
   },
   {
-    title: "CSS Styling & Motion Libraries",
+    titleKey: "skills-css-motion" as const,
     stack: [
       "Tailwind CSS",
       "Framer Motion",
@@ -25,7 +25,7 @@ export const skills = [
     ],
   },
   {
-    title: "Backend Technologies",
+    titleKey: "skills-backend" as const,
     stack: [
       "Node.js",
       "Ruby on Rails",
@@ -38,7 +38,7 @@ export const skills = [
     ],
   },
   {
-    title: "Databases",
+    titleKey: "skills-databases" as const,
     stack: [
       "MongoDB",
       "Firebase",
@@ -50,11 +50,11 @@ export const skills = [
     ],
   },
   {
-    title: "Software & Tools",
+    titleKey: "skills-software-tools" as const,
     stack: ["VS Code", "Cursor", "Git", "GitHub", "Eslint", "Figma", "VN"],
   },
   {
-    title: "Currently Learning & Exploring",
+    titleKey: "skills-learning" as const,
     stack: [
       "Socket.io",
       "Docker",

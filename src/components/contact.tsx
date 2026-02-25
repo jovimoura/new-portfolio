@@ -1,14 +1,14 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { FormValidator, FormValues } from "@/lib/validators/form";
+import { getFormValidator, FormValues } from "@/lib/validators/form";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/Form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { AnimationContainer } from "./animation-container";
@@ -16,10 +16,24 @@ import { Button } from "./ui/Button";
 import { Input } from "./ui/Input";
 import { Textarea } from "./ui/Textarea";
 import SendButton from "./ui/SendButton";
+import { useLocalization } from "@/providers/localization-provider";
 
 export const Contact = () => {
+  const { localized } = useLocalization();
+  const formValidator = useMemo(
+    () =>
+      getFormValidator({
+        "form-error-name-min": localized["form-error-name-min"],
+        "form-error-name-max": localized["form-error-name-max"],
+        "form-error-email": localized["form-error-email"],
+        "form-error-message-min": localized["form-error-message-min"],
+        "form-error-message-max": localized["form-error-message-max"],
+      }),
+    [localized]
+  );
+
   const form = useForm<FormValues>({
-    resolver: zodResolver(FormValidator),
+    resolver: zodResolver(formValidator),
     mode: "onBlur",
     defaultValues: {
       name: "",
@@ -46,8 +60,8 @@ export const Contact = () => {
     onError: (error) => {
       if (error instanceof AxiosError) {
         console.error(error.message);
-        toast("Something went wrong!", {
-          description: "Unable to send message, please try again.",
+        toast(localized["toast-error-title"], {
+          description: localized["toast-error-description"],
         });
       }
     },
@@ -56,8 +70,8 @@ export const Contact = () => {
       setTimeout(() => {
         setIsSent(true);
       }, 1000);
-      toast("Your message has been received!", {
-        description: "I got your message, I will get back to you soon!",
+      toast(localized["toast-success-title"], {
+        description: localized["toast-success-description"],
       });
     },
   });
@@ -67,7 +81,7 @@ export const Contact = () => {
       <AnimationContainer animation="slide-up" delay={0.1}>
         <div className="w-full">
           <h2 className="text-2xl lg:text-3xl font-medium text-left w-full">
-            Get In Touch
+            {localized["contact-title"]}
           </h2>
         </div>
       </AnimationContainer>
@@ -83,7 +97,7 @@ export const Contact = () => {
               variant="outline"
               className="flex-col items-start w-full h-auto p-5 hover:scale-100"
             >
-              <h6 className="text-base font-medium">Email</h6>
+              <h6 className="text-base font-medium">{localized["contact-email-label"]}</h6>
               <p className="mt-2 text-base text-foreground/70">
                 joaovictors.mouraa@gmail.com
               </p>
@@ -126,7 +140,7 @@ export const Contact = () => {
                         {...field}
                         disabled={isLoading}
                         type="text"
-                        placeholder="Name"
+                        placeholder={localized["form-placeholder-name"]}
                         autoComplete="off"
                         className="h-12 px-5 capitalize outline-none rounded-lg hover:border-blue-500"
                       />
@@ -168,7 +182,7 @@ export const Contact = () => {
                           required
                           type="email"
                           name="email"
-                          placeholder="Email"
+                          placeholder={localized["form-placeholder-email"]}
                           autoComplete="off"
                           className="h-12 px-5 outline-none rounded-lg hover:border-blue-500"
                         />
@@ -203,7 +217,7 @@ export const Contact = () => {
                           required
                           type="tel"
                           name="phone"
-                          placeholder="Phone"
+                          placeholder={localized["form-placeholder-phone"]}
                           autoComplete="off"
                           className="h-12 px-5 outline-none rounded-lg hover:border-blue-500"
                         />
@@ -240,7 +254,7 @@ export const Contact = () => {
                         required
                         rows={5}
                         name="message"
-                        placeholder="Message..."
+                        placeholder={localized["form-placeholder-message"]}
                         autoComplete="off"
                         className="w-full p-5 outline-none resize-none rounded-lg hover:border-blue-500"
                       />

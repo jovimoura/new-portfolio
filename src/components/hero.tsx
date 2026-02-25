@@ -47,7 +47,7 @@ export const Hero = () => {
         </div>
         <div className="flex flex-col gap-2 flex-shrink-0">
           <p className="text-sm font-medium text-foreground/70">
-            John Welcome&apos;s you!
+            {localized['hero-welcome']}
           </p>
         </div>
       </AnimationContainer>
@@ -56,8 +56,8 @@ export const Hero = () => {
         <>
           <div className="text-balance relative z-20 mx-auto my-4 max-w-5xl text-center text-4xl lg:text-5xl font-bold">
             <motion.h2 className="text-balance !leading-snug">
-              {"Building Digital Solutions that Make a Difference"
-                .split(" ")
+              {localized['hero-headline']
+                .split(' ')
                 .map((word, index) => (
                   <motion.span
                     initial={{ opacity: 0, y: 10 }}
@@ -69,15 +69,15 @@ export const Hero = () => {
                     className="inline-block whitespace-nowrap"
                     key={index}
                   >
-                    {word === "Digital" ? (
+                    {word === localized['hero-headline-highlight'] ? (
                       <span className="text-transparent bg-clip-text bg-gradient-to-br from-sky-500 to-blue-500">
-                        Digital
+                        {word}
                       </span>
                     ) : (
                       word
                     )}
                     &nbsp;
-                    {word === "that" && <br />}
+                    {word === localized['hero-headline-break-after'] && <br />}
                   </motion.span>
                 ))}
             </motion.h2>
@@ -91,12 +91,7 @@ export const Hero = () => {
         className="relative mt-6 flex flex-col items-center justify-center gap-y-6 max-w-3xl mx-auto text-center"
       >
         <p className="text-base text-muted-foreground !leading-relaxed">
-          Your one-stop solution for professional web development and design.{" "}
-          <span className="inline-blocklg:inline-block">
-            Whether you need a stunning website, an e-commerce platform, or a
-            custom web application, I provide end-to-end solutions that help
-            your business stand out in the digital landscape.
-          </span>
+          {localized['hero-value-paragraph']}
         </p>
       </AnimationContainer>
 
@@ -144,9 +139,9 @@ export const Hero = () => {
                   </div>
                 </div>
                 <p className="text-base text-muted-foreground text-center mt-4">
-                  {index === 0 && "Projects Completed"}
-                  {index === 1 && "Year of Experience"}
-                  {index === 2 && "Support Hours"}
+                  {index === 0 && localized['hero-stats-projects']}
+                  {index === 1 && localized['hero-stats-experience']}
+                  {index === 2 && localized['hero-stats-support']}
                 </p>
               </AnimationContainer>
             ))}

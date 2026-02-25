@@ -1,10 +1,14 @@
-import React from "react";
+"use client";
 
+import React from "react";
 import { skills } from "@/lib/skills";
 import { AnimationContainer } from "../animation-container";
 import { ShowSkills } from "../show-skills";
+import { useLocalization } from "@/providers/localization-provider";
 
 const MySkills = () => {
+  const { localized } = useLocalization();
+
   return (
     <div className="w-full relative pb-20 py-10 z-40">
       <AnimationContainer
@@ -14,19 +18,15 @@ const MySkills = () => {
       >
         <div className="w-full">
           <h2 className="text-2xl lg:text-3xl font-medium text-left w-full">
-            Skills & Tools
+            {localized["skills-title"]}
           </h2>
 
           <p className="text-justify lg:leading-7 text-foreground/80 lg:text-start mt-10">
-            A creative problem solver with over 5 years of programming
-            experience, I&apos;ve explored diverse programming languages,
-            libraries, and technology stacks, honing my skills in both Frontend,
-            Backend, and App development.
+            {localized["skills-paragraph1"]}
           </p>
 
           <p className="text-justify lg:leading-7 text-foreground/80 lg:text-start mt-4">
-            Eager to learn and adept at adopting new technologies, I thrive on
-            expanding my skill set in the ever-evolving tech landscape.
+            {localized["skills-paragraph2"]}
           </p>
         </div>
       </AnimationContainer>
@@ -35,12 +35,14 @@ const MySkills = () => {
         <div className="flex flex-col flex-wrap items-start gap-5">
           {skills.map((skill, index) => (
             <AnimationContainer
-              key={skill.title}
+              key={skill.titleKey}
               delay={0.1 * index + 0.1}
               className="flex flex-col mb-4"
             >
               <div className="space-y-3">
-                <h3 className="text-lg font-bold">{skill.title}</h3>
+                <h3 className="text-lg font-bold">
+                  {localized[skill.titleKey]}
+                </h3>
                 <div className="flex flex-wrap items-center gap-4">
                   <ShowSkills stacks={skill.stack} />
                 </div>

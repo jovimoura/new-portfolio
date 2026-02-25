@@ -3,5 +3,465 @@
     "pt-BR": "Vamos trabalhar juntos",
     "en-US": "Let's work together",
     "es-ES": "Vamos trabajar juntos"
+  },
+  "not-found-title": {
+    "pt-BR": "Página não encontrada",
+    "en-US": "Not Found",
+    "es-ES": "No encontrado"
+  },
+  "not-found-description": {
+    "pt-BR": "Não foi possível encontrar o recurso solicitado",
+    "en-US": "Could not find the requested resource",
+    "es-ES": "No se pudo encontrar el recurso solicitado"
+  },
+  "not-found-return-home": {
+    "pt-BR": "Voltar ao início",
+    "en-US": "Return Home",
+    "es-ES": "Volver al inicio"
+  },
+  "hero-welcome": {
+    "pt-BR": "John te dá as boas-vindas!",
+    "en-US": "John Welcome's you!",
+    "es-ES": "¡John te da la bienvenida!"
+  },
+  "hero-headline-highlight": {
+    "pt-BR": "Digitais",
+    "en-US": "Digital",
+    "es-ES": "Digitales"
+  },
+  "hero-headline-break-after": {
+    "pt-BR": "que",
+    "en-US": "that",
+    "es-ES": "que"
+  },
+  "hero-headline": {
+    "pt-BR": "Construindo Soluções Digitais que Fazem a Diferença",
+    "en-US": "Building Digital Solutions that Make a Difference",
+    "es-ES": "Construyendo Soluciones Digitales que Marcan la Diferencia"
+  },
+  "hero-value-paragraph": {
+    "pt-BR": "Sua solução completa para desenvolvimento e design web profissional. Se você precisa de um site impressionante, uma plataforma de e-commerce ou uma aplicação web sob medida, ofereço soluções de ponta a ponta que ajudam seu negócio a se destacar no cenário digital.",
+    "en-US": "Your one-stop solution for professional web development and design. Whether you need a stunning website, an e-commerce platform, or a custom web application, I provide end-to-end solutions that help your business stand out in the digital landscape.",
+    "es-ES": "Tu solución integral para desarrollo y diseño web profesional. Ya sea que necesites un sitio web impactante, una plataforma de e-commerce o una aplicación web a medida, ofrezco soluciones de punta a punta que ayudan a tu negocio a destacar en el panorama digital."
+  },
+  "hero-stats-projects": {
+    "pt-BR": "Projetos Concluídos",
+    "en-US": "Projects Completed",
+    "es-ES": "Proyectos Completados"
+  },
+  "hero-stats-experience": {
+    "pt-BR": "Anos de Experiência",
+    "en-US": "Year of Experience",
+    "es-ES": "Años de Experiencia"
+  },
+  "hero-stats-support": {
+    "pt-BR": "Horas de Suporte",
+    "en-US": "Support Hours",
+    "es-ES": "Horas de Soporte"
+  },
+  "about-title": {
+    "pt-BR": "Sobre mim",
+    "en-US": "About Me",
+    "es-ES": "Sobre mí"
+  },
+  "about-body": {
+    "pt-BR": "Sou um desenvolvedor de software e designer apaixonado por criar experiências digitais excepcionais. Com expertise em desenvolvimento e design, trago uma perspectiva única para cada projeto, garantindo que funcionalidade e estética se encontrem de forma fluida. Minha abordagem combina arquitetura de código limpo com interfaces intuitivas, criando soluções que não apenas funcionam perfeitamente, mas também encantam os usuários. Especializo-me em aplicações web responsivas com React e experiências mobile multiplataforma com React Native. Quando não estou codando, me encontro desenhando interfaces no Figma, sempre buscando unir funcionalidade e design. Vamos construir algo incrível juntos!",
+    "en-US": "I am a passionate software developer and designer dedicated to crafting exceptional digital experiences. With expertise in both development and design, I bring a unique perspective to every project, ensuring seamless functionality meets stunning aesthetics. My approach combines clean code architecture with intuitive user interfaces, creating solutions that not only work flawlessly but also delight users. I specialize in building responsive web applications with React and creating cross-platform mobile experiences using React Native. When I'm not coding, you'll find me designing sleek user interfaces in Figma, always striving to bridge the gap between functionality and beautiful design. Let's build something amazing together!",
+    "es-ES": "Soy un desarrollador de software y diseñador apasionado dedicado a crear experiencias digitales excepcionales. Con experiencia en desarrollo y diseño, aporto una perspectiva única a cada proyecto, asegurando que la funcionalidad y la estética se encuentren de forma fluida. Mi enfoque combina arquitectura de código limpio con interfaces intuitivas, creando soluciones que no solo funcionan a la perfección sino que también deleitan a los usuarios. Me especializo en aplicaciones web responsivas con React y experiencias móviles multiplataforma con React Native. Cuando no estoy programando, me encontrarás diseñando interfaces en Figma, siempre buscando unir funcionalidad y diseño. ¡Construyamos algo increíble juntos!"
+  },
+  "experience-atento-title": {
+    "pt-BR": "Engenheiro de Software na Atento",
+    "en-US": "Software Engineer at Atento",
+    "es-ES": "Ingeniero de Software en Atento"
+  },
+  "experience-atento-period": {
+    "pt-BR": "Dez 2024 - Atual",
+    "en-US": "Dec 2024 - Current",
+    "es-ES": "Dic 2024 - Actual"
+  },
+  "experience-atento-description": {
+    "pt-BR": "Na Atento, sou responsável por trabalhar com Next.js em diversos produtos, como o Advanced Insights, um sistema que usa inteligência artificial para empresas com departamentos de atendimento ao cliente. Desenvolvi recursos multilíngues e um fluxo de qualidade de relatórios. Converti uma grande parte dos componentes client em server components, alcançando um ganho de 40% de performance. Implementei um chat com IA que permite ao usuário selecionar um arquivo de áudio e conversar ou fazer perguntas sobre esse áudio.",
+    "en-US": "At Atento, I am responsible for working with Next.js on various products, such as Advanced Insights, which is essentially a system that uses artificial intelligence for companies with customer service departments. I built multi-language features and a report quality flow. I converted a large portion of the client components into server components, achieving a 40% performance boost. I implemented an AI-powered chat that allows the user to select an audio file and engage in a conversation or ask questions about that audio.",
+    "es-ES": "En Atento, soy responsable de trabajar con Next.js en diversos productos, como Advanced Insights, un sistema que utiliza inteligencia artificial para empresas con departamentos de atención al cliente. Desarrollé funciones multilingües y un flujo de calidad de informes. Convertí una gran parte de los componentes cliente en server components, logrando una mejora del 40% en rendimiento. Implementé un chat con IA que permite al usuario seleccionar un archivo de audio y conversar o hacer preguntas sobre ese audio."
+  },
+  "experience-breaker19-title": {
+    "pt-BR": "Engenheiro de Software (Temporário) na Breaker19",
+    "en-US": "Software Engineer (Temporary) at Breaker19",
+    "es-ES": "Ingeniero de Software (Temporal) en Breaker19"
+  },
+  "experience-breaker19-period": {
+    "pt-BR": "Ago 2024 - Nov 2024",
+    "en-US": "Aug 2024 - Nov 2024",
+    "es-ES": "Ago 2024 - Nov 2024"
+  },
+  "experience-breaker19-description": {
+    "pt-BR": "Breaker19 é um marketplace eficiente de transporte e hotshot para o setor petrolífero. Trabalhei na refatoração e manutenção dos apps de motoristas e compradores usando React Native, Expo e Swift. Também contribuí no backend com Laravel e PostgreSQL.",
+    "en-US": "Breaker19 is an efficient oilfield trucking & hotshot marketplace. I worked on the refactoring and maintenance of the driver and buyer apps using React Native, Expo, and Swift. I didn't limit myself to mobile development, but also contributed to the backend using Laravel and PostgreSQL.",
+    "es-ES": "Breaker19 es un marketplace eficiente de transporte y hotshot para el sector petrolero. Trabajé en la refactorización y mantenimiento de las apps de conductores y compradores usando React Native, Expo y Swift. También contribuí en el backend con Laravel y PostgreSQL."
+  },
+  "experience-fetchly-title": {
+    "pt-BR": "Desenvolvedor Fullstack na Fetchly Labs",
+    "en-US": "Fullstack Developer at Fetchly Labs",
+    "es-ES": "Desarrollador Fullstack en Fetchly Labs"
+  },
+  "experience-fetchly-period": {
+    "pt-BR": "Set 2023 - Jun 2024",
+    "en-US": "Sep 2023 - Jun 2024",
+    "es-ES": "Sep 2023 - Jun 2024"
+  },
+  "experience-fetchly-description": {
+    "pt-BR": "Fetchly Labs é uma Software House responsável por criar todo tipo de aplicações web e mobile, sempre com as tecnologias mais modernas. Durante meu tempo na Fetchly, atuei como Engenheiro de Software desenvolvendo plataformas de E-commerce como CityWinery e MyTouring, aplicações mobile com React Native como Helper Heeves, e sites empresariais como Freight130. Trabalhei no frontend com Angular, React, React Native e Astro, e no backend com Ruby on Rails e PostgreSQL, como em Home Loan Gurus.",
+    "en-US": "Fetchly Labs is a Software House responsible for creating all kinds of web and mobile applications, always using the most modern frameworks and technologies. During my time at Fetchly, I worked as a Software Engineer developing E-commerce platforms such as CityWinery and MyTouring, mobile applications with React Native like Helper Heeves, and business websites like Freight130. I worked not only on the frontend with Angular, React, React Native, and Astro but also on the backend using Ruby on Rails and PostgreSQL, such as Home Loan Gurus.",
+    "es-ES": "Fetchly Labs es una Software House responsable de crear todo tipo de aplicaciones web y móviles, siempre con las tecnologías más modernas. Durante mi tiempo en Fetchly, trabajé como Ingeniero de Software desarrollando plataformas E-commerce como CityWinery y MyTouring, aplicaciones móviles con React Native como Helper Heeves, y sitios empresariales como Freight130. Trabajé en frontend con Angular, React, React Native y Astro, y en backend con Ruby on Rails y PostgreSQL, como en Home Loan Gurus."
+  },
+  "experience-noclaf-title": {
+    "pt-BR": "Desenvolvedor Fullstack na Noclaf Tech",
+    "en-US": "Fullstack Developer at Noclaf Tech",
+    "es-ES": "Desarrollador Fullstack en Noclaf Tech"
+  },
+  "experience-noclaf-period": {
+    "pt-BR": "Mar 2022 - Set 2023",
+    "en-US": "Mar 2022 - Sep 2023",
+    "es-ES": "Mar 2022 - Sep 2023"
+  },
+  "experience-noclaf-description": {
+    "pt-BR": "Durante meu tempo na Noclaf Tech, atuei como Desenvolvedor Web Fullstack, desenvolvendo sistemas para diversas empresas no Brasil. Desenvolvi aplicações de gestão e emissão de notas fiscais, plataformas de e-commerce, landing pages e sites educacionais para crianças.",
+    "en-US": "During my time at Noclaf Tech, I worked as a Fullstack Web Developer, developing systems for various companies in Brazil. I developed management and invoice issuance applications, e-commerce platforms, landing pages, and educational websites for children.",
+    "es-ES": "Durante mi tiempo en Noclaf Tech, trabajé como Desarrollador Web Fullstack, desarrollando sistemas para diversas empresas en Brasil. Desarrollé aplicaciones de gestión y emisión de facturas, plataformas de e-commerce, landing pages y sitios educativos para niños."
+  },
+  "experience-portlouis-title": {
+    "pt-BR": "Desenvolvedor Frontend na Port Louis",
+    "en-US": "Frontend Developer at Port Louis",
+    "es-ES": "Desarrollador Frontend en Port Louis"
+  },
+  "experience-portlouis-period": {
+    "pt-BR": "Dez 2021 - Fev 2022",
+    "en-US": "Dec 2021 - Feb 2022",
+    "es-ES": "Dic 2021 - Feb 2022"
+  },
+  "experience-portlouis-description": {
+    "pt-BR": "Port Louis é uma empresa de automação de serviços nos setores de Auditoria Jurídica, Administração, Precificação de Ativos e mais. Durante meu tempo na Port Louis, atuei como Desenvolvedor Frontend, desenvolvendo novas funcionalidades, criando documentação e testes unitários. Corrigi diversos tipos de erros de código, realizei refatoração e atualizações, migrando componentes de Vue 2 para a Vue Composition API.",
+    "en-US": "Port Louis is a service automation company in the sectors of Legal Audits, Administration, Asset Pricing, and more. During my time at Port Louis, I worked as a Frontend Developer, developing new features, creating documentation, and unit tests. I worked on fixing various types of code errors, performed refactoring and updates in the code, transitioning components from Vue 2 to the Vue Composition API.",
+    "es-ES": "Port Louis es una empresa de automatización de servicios en los sectores de Auditoría Legal, Administración, Valoración de Activos y más. Durante mi tiempo en Port Louis, trabajé como Desarrollador Frontend, desarrollando nuevas funcionalidades, creando documentación y pruebas unitarias. Corregí diversos tipos de errores de código, realicé refactorización y actualizaciones, migrando componentes de Vue 2 a la Vue Composition API."
+  },
+  "experience-freelance-title": {
+    "pt-BR": "Desenvolvedor Freelance",
+    "en-US": "Freelance Developer",
+    "es-ES": "Desarrollador Freelance"
+  },
+  "experience-freelance-period": {
+    "pt-BR": "Jun 2020 - Atual",
+    "en-US": "Jun 2020 - Current",
+    "es-ES": "Jun 2020 - Actual"
+  },
+  "experience-freelance-description": {
+    "pt-BR": "Iniciei minha carreira como Desenvolvedor Freelance, criando landing pages e sites simples. Atualmente tenho clientes para os quais ofereço serviços de manutenção e desenvolvimento para suas empresas e negócios. Desenvolvi blogs, landing pages, aplicações mobile e criei algumas plataformas SaaS usando Next.js, React Native, Expo, Node e Supabase.",
+    "en-US": "I started my developer career as a Freelance Developer, creating landing pages and simple websites. Currently, I have clients for whom I offer maintenance and development services for their companies and small businesses. I have developed blogs, landing pages, mobile applications, and created some SaaS platforms using Next.js, React Native, Expo, Node, and Supabase.",
+    "es-ES": "Comencé mi carrera como Desarrollador Freelance, creando landing pages y sitios simples. Actualmente tengo clientes a los que ofrezco servicios de mantenimiento y desarrollo para sus empresas y negocios. He desarrollado blogs, landing pages, aplicaciones móviles y creado algunas plataformas SaaS usando Next.js, React Native, Expo, Node y Supabase."
+  },
+  "projects-featured-title": {
+    "pt-BR": "Projetos em Destaque",
+    "en-US": "Featured Projects",
+    "es-ES": "Proyectos Destacados"
+  },
+  "projects-view-more": {
+    "pt-BR": "Ver mais",
+    "en-US": "View more",
+    "es-ES": "Ver más"
+  },
+  "projects-page-title": {
+    "pt-BR": "Projetos",
+    "en-US": "Projects",
+    "es-ES": "Proyectos"
+  },
+  "projects-page-intro": {
+    "pt-BR": "Aqui está uma coleção do meu trabalho, onde transformei ideias em soluções reais e funcionais. De ferramentas úteis para estudantes a plataformas SaaS criativas, estes projetos mostram minha paixão por construir coisas que resolvem problemas reais com tecnologias web e mobile modernas.",
+    "en-US": "Here's a collection of my work where I've turned ideas into real, working solutions. From useful tools for students to creative SaaS platforms, these projects show my love for building things that solve real problems with modern web and mobile technologies.",
+    "es-ES": "Aquí tienes una colección de mi trabajo donde he convertido ideas en soluciones reales y funcionales. Desde herramientas útiles para estudiantes hasta plataformas SaaS creativas, estos proyectos muestran mi pasión por construir cosas que resuelven problemas reales con tecnologías web y móviles modernas."
+  },
+  "btn-github": {
+    "pt-BR": "GitHub",
+    "en-US": "GitHub",
+    "es-ES": "GitHub"
+  },
+  "btn-view": {
+    "pt-BR": "Ver",
+    "en-US": "View",
+    "es-ES": "Ver"
+  },
+  "project-yoresume-title": {
+    "pt-BR": "YoResume",
+    "en-US": "YoResume",
+    "es-ES": "YoResume"
+  },
+  "project-yoresume-description": {
+    "pt-BR": "YoResume é uma plataforma de currículos que cria CVs para passar em análises feitas por IAs – redação, edição, formatação e otimização.",
+    "en-US": "YoResume is a resume platform that creates CVs to pass analyzes carried out by AIs – writing, editing, formatting and optimization.",
+    "es-ES": "YoResume es una plataforma de currículos que crea CVs para superar análisis realizados por IAs: redacción, edición, formato y optimización."
+  },
+  "project-sevenlabz-title": {
+    "pt-BR": "SevenLabz",
+    "en-US": "SevenLabz",
+    "es-ES": "SevenLabz"
+  },
+  "project-sevenlabz-description": {
+    "pt-BR": "SevenLabz é uma plataforma de áudio com IA que criei para ajudar criadores de conteúdo do TikTok, Instagram e Youtube.",
+    "en-US": "SevenLabz its a AI Audio Platform that I made to help content creators of Tiktok, Instagram and Youtube.",
+    "es-ES": "SevenLabz es una plataforma de audio con IA que creé para ayudar a creadores de contenido de TikTok, Instagram y Youtube."
+  },
+  "project-contrateai-title": {
+    "pt-BR": "ContrateAI",
+    "en-US": "ContrateAI",
+    "es-ES": "ContrateAI"
+  },
+  "project-contrateai-description": {
+    "pt-BR": "ContrateAI simplifica a forma de criar contratos com inteligência artificial, permitindo interações para compreensão do conteúdo.",
+    "en-US": "ContrateAI simplifies the way that you create contract with artificial intelligence, allowing interactions for content comprehension.",
+    "es-ES": "ContrateAI simplifica la forma de crear contratos con inteligencia artificial, permitiendo interacciones para la comprensión del contenido."
+  },
+  "project-mylunch-title": {
+    "pt-BR": "My Lunch",
+    "en-US": "My Lunch",
+    "es-ES": "My Lunch"
+  },
+  "project-mylunch-description": {
+    "pt-BR": "É um delivery de comida simples feito para ajudar pequenos negócios de alimentação.",
+    "en-US": "Its a simple food delivery made to help small food businesses.",
+    "es-ES": "Es un delivery de comida simple hecho para ayudar a pequeños negocios de alimentación."
+  },
+  "project-easyai-title": {
+    "pt-BR": "EasyAI",
+    "en-US": "EasyAI",
+    "es-ES": "EasyAI"
+  },
+  "project-easyai-description": {
+    "pt-BR": "Uma plataforma de IA onde você encontra as principais funcionalidades de Inteligência Artificial: geração de imagens, criação de texto e revisão de código.",
+    "en-US": "A AI Platform where you can find the main features of Artificial Intelligence, such as image generation, text creation, and code review.",
+    "es-ES": "Una plataforma de IA donde puedes encontrar las principales funciones de Inteligencia Artificial: generación de imágenes, creación de texto y revisión de código."
+  },
+  "project-jmshop-title": {
+    "pt-BR": "J.M. Shop",
+    "en-US": "J.M. Shop",
+    "es-ES": "J.M. Shop"
+  },
+  "project-jmshop-description": {
+    "pt-BR": "É um e-commerce fictício que desenvolvi para vender iPhones.",
+    "en-US": "Its a fake ecommerce that I developed to sell iphones.",
+    "es-ES": "Es un e-commerce ficticio que desarrollé para vender iPhones."
+  },
+  "skills-title": {
+    "pt-BR": "Habilidades e Ferramentas",
+    "en-US": "Skills & Tools",
+    "es-ES": "Habilidades y Herramientas"
+  },
+  "skills-paragraph1": {
+    "pt-BR": "Um resolvedor criativo de problemas com mais de 5 anos de experiência em programação. Explorei diversas linguagens, bibliotecas e stacks, aprimorando habilidades em Frontend, Backend e desenvolvimento de apps.",
+    "en-US": "A creative problem solver with over 5 years of programming experience, I've explored diverse programming languages, libraries, and technology stacks, honing my skills in both Frontend, Backend, and App development.",
+    "es-ES": "Un resolvedor creativo de problemas con más de 5 años de experiencia en programación. He explorado diversos lenguajes, bibliotecas y stacks, perfeccionando mis habilidades en Frontend, Backend y desarrollo de apps."
+  },
+  "skills-paragraph2": {
+    "pt-BR": "Com vontade de aprender e habilidade para adotar novas tecnologias, me destaco em expandir meu conjunto de habilidades no cenário tecnológico em constante evolução.",
+    "en-US": "Eager to learn and adept at adopting new technologies, I thrive on expanding my skill set in the ever-evolving tech landscape.",
+    "es-ES": "Dispuesto a aprender y hábil para adoptar nuevas tecnologías, me destaco en expandir mis habilidades en el panorama tecnológico en constante evolución."
+  },
+  "skills-languages": {
+    "pt-BR": "Linguagens",
+    "en-US": "Languages",
+    "es-ES": "Lenguajes"
+  },
+  "skills-frontend-frameworks": {
+    "pt-BR": "Frameworks Frontend",
+    "en-US": "Frontend Frameworks",
+    "es-ES": "Frameworks Frontend"
+  },
+  "skills-javascript-libraries": {
+    "pt-BR": "Bibliotecas JavaScript",
+    "en-US": "Javascript Libraries",
+    "es-ES": "Bibliotecas Javascript"
+  },
+  "skills-css-motion": {
+    "pt-BR": "CSS, Estilização e Motion",
+    "en-US": "CSS Styling & Motion Libraries",
+    "es-ES": "CSS, Estilos y Motion"
+  },
+  "skills-backend": {
+    "pt-BR": "Tecnologias Backend",
+    "en-US": "Backend Technologies",
+    "es-ES": "Tecnologías Backend"
+  },
+  "skills-databases": {
+    "pt-BR": "Bancos de Dados",
+    "en-US": "Databases",
+    "es-ES": "Bases de Datos"
+  },
+  "skills-software-tools": {
+    "pt-BR": "Software e Ferramentas",
+    "en-US": "Software & Tools",
+    "es-ES": "Software y Herramientas"
+  },
+  "skills-learning": {
+    "pt-BR": "Aprendendo e Explorando",
+    "en-US": "Currently Learning & Exploring",
+    "es-ES": "Aprendiendo y Explorando"
+  },
+  "contact-title": {
+    "pt-BR": "Entre em contato",
+    "en-US": "Get In Touch",
+    "es-ES": "Contáctame"
+  },
+  "contact-email-label": {
+    "pt-BR": "Email",
+    "en-US": "Email",
+    "es-ES": "Email"
+  },
+  "form-placeholder-name": {
+    "pt-BR": "Nome",
+    "en-US": "Name",
+    "es-ES": "Nombre"
+  },
+  "form-placeholder-email": {
+    "pt-BR": "Email",
+    "en-US": "Email",
+    "es-ES": "Email"
+  },
+  "form-placeholder-phone": {
+    "pt-BR": "Telefone",
+    "en-US": "Phone",
+    "es-ES": "Teléfono"
+  },
+  "form-placeholder-message": {
+    "pt-BR": "Mensagem...",
+    "en-US": "Message...",
+    "es-ES": "Mensaje..."
+  },
+  "toast-error-title": {
+    "pt-BR": "Algo deu errado!",
+    "en-US": "Something went wrong!",
+    "es-ES": "¡Algo salió mal!"
+  },
+  "toast-error-description": {
+    "pt-BR": "Não foi possível enviar a mensagem. Tente novamente.",
+    "en-US": "Unable to send message, please try again.",
+    "es-ES": "No se pudo enviar el mensaje. Intenta de nuevo."
+  },
+  "toast-success-title": {
+    "pt-BR": "Sua mensagem foi recebida!",
+    "en-US": "Your message has been received!",
+    "es-ES": "¡Tu mensaje ha sido recibido!"
+  },
+  "toast-success-description": {
+    "pt-BR": "Recebi sua mensagem e responderei em breve!",
+    "en-US": "I got your message, I will get back to you soon!",
+    "es-ES": "Recibí tu mensaje, ¡te responderé pronto!"
+  },
+  "form-error-name-min": {
+    "pt-BR": "O nome deve ter pelo menos 3 caracteres",
+    "en-US": "Name must be at least 3 characters long",
+    "es-ES": "El nombre debe tener al menos 3 caracteres"
+  },
+  "form-error-name-max": {
+    "pt-BR": "O nome deve ter no máximo 50 caracteres",
+    "en-US": "Name must be at most 50 characters long",
+    "es-ES": "El nombre debe tener como máximo 50 caracteres"
+  },
+  "form-error-email": {
+    "pt-BR": "Endereço de email inválido",
+    "en-US": "Invalid email address",
+    "es-ES": "Dirección de email inválida"
+  },
+  "form-error-message-min": {
+    "pt-BR": "A mensagem deve ter pelo menos 5 caracteres",
+    "en-US": "Message must be at least 5 characters long",
+    "es-ES": "El mensaje debe tener al menos 5 caracteres"
+  },
+  "form-error-message-max": {
+    "pt-BR": "A mensagem deve ter no máximo 500 caracteres",
+    "en-US": "Message must be at most 500 characters long",
+    "es-ES": "El mensaje debe tener como máximo 500 caracteres"
+  },
+  "send-button-sending": {
+    "pt-BR": "Enviando...",
+    "en-US": "Sending...",
+    "es-ES": "Enviando..."
+  },
+  "send-button-sent": {
+    "pt-BR": "Enviado",
+    "en-US": "Sent",
+    "es-ES": "Enviado"
+  },
+  "send-button-label": {
+    "pt-BR": "Enviar mensagem",
+    "en-US": "Send Message",
+    "es-ES": "Enviar mensaje"
+  },
+  "blog-title": {
+    "pt-BR": "Blog",
+    "en-US": "Blog",
+    "es-ES": "Blog"
+  },
+  "blog-intro": {
+    "pt-BR": "Bem-vindo ao meu caderno digital! Aqui escrevo sobre os problemas interessantes que resolvi, compartilho dicas que gostaria de ter conhecido antes e documento minha jornada no mundo do desenvolvimento de software. Sem jargão, apenas experiências honestas e insights úteis.",
+    "en-US": "Welcome to my digital notebook! Here I write about the interesting problems I've solved, share tips and tricks I wish I knew earlier, and document my journey through the world of software development. No fancy jargon, just honest experiences and helpful insights.",
+    "es-ES": "¡Bienvenido a mi cuaderno digital! Aquí escribo sobre los problemas interesantes que he resuelto, comparto consejos que me hubiera gustado conocer antes y documento mi recorrido en el mundo del desarrollo de software. Sin jerga, solo experiencias honestas e ideas útiles."
+  },
+  "searchbar-placeholder": {
+    "pt-BR": "Buscar post do blog",
+    "en-US": "Search for a blog post",
+    "es-ES": "Buscar una entrada del blog"
+  },
+  "blog-details-back": {
+    "pt-BR": "Voltar",
+    "en-US": "Back",
+    "es-ES": "Volver"
+  },
+  "blog-details-written-by": {
+    "pt-BR": "Escrito por John Moura em",
+    "en-US": "Written by John Moura on",
+    "es-ES": "Escrito por John Moura el"
+  },
+  "nav-home": {
+    "pt-BR": "Início",
+    "en-US": "Home",
+    "es-ES": "Inicio"
+  },
+  "nav-about": {
+    "pt-BR": "Sobre",
+    "en-US": "About",
+    "es-ES": "Sobre"
+  },
+  "nav-projects": {
+    "pt-BR": "Projetos",
+    "en-US": "Projects",
+    "es-ES": "Proyectos"
+  },
+  "nav-blog": {
+    "pt-BR": "Blog",
+    "en-US": "Blog",
+    "es-ES": "Blog"
+  },
+  "nav-contact": {
+    "pt-BR": "Contato",
+    "en-US": "Contact",
+    "es-ES": "Contacto"
+  },
+  "nav-github": {
+    "pt-BR": "GitHub",
+    "en-US": "GitHub",
+    "es-ES": "GitHub"
+  },
+  "nav-linkedin": {
+    "pt-BR": "LinkedIn",
+    "en-US": "LinkedIn",
+    "es-ES": "LinkedIn"
+  },
+  "nav-youtube": {
+    "pt-BR": "YouTube",
+    "en-US": "YouTube",
+    "es-ES": "YouTube"
+  },
+  "nav-resume": {
+    "pt-BR": "Currículo",
+    "en-US": "Resume",
+    "es-ES": "Currículum"
   }
 }

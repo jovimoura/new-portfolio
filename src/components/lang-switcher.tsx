@@ -8,6 +8,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/Tooltip";
 import { useLocalization, type LocaleOption } from "@/providers/localization-provider";
+import { toggleLocalization } from "@/actions";
 
 export function LangSwitcher() {
   const { locale, setLocale } = useLocalization();
@@ -22,6 +23,7 @@ export function LangSwitcher() {
           onValueChange={(l: LocaleOption | "") => {
             if (!l || l === locale) return;
             setLocale(l);
+            toggleLocalization(l);
           }}
         >
           <ToggleGroupItem

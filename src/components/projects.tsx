@@ -10,9 +10,11 @@ import { AnimationContainer } from "./animation-container";
 import { MagicCard } from "./ui/magic-card";
 import Project from "./utils/Project";
 import { Button } from "./ui/Button";
+import { useLocalization } from "@/providers/localization-provider";
 
 export const Projects = () => {
   const data = projects;
+  const { localized } = useLocalization();
 
   return (
     <div className="w-full relative pb-20 py-10 z-40">
@@ -23,7 +25,7 @@ export const Projects = () => {
       >
         <div className="w-full">
           <h2 className="text-2xl lg:text-3xl font-medium text-left w-full">
-            Featured Projects
+            {localized['projects-featured-title']}
           </h2>
         </div>
       </AnimationContainer>
@@ -47,7 +49,7 @@ export const Projects = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5 w-full">
           {data &&
             data.map((project: ProjectProps, index) => (
-              <AnimationContainer key={project.title} delay={0.2 * index + 0.1}>
+              <AnimationContainer key={project.id} delay={0.2 * index + 0.1}>
                 <MagicCard
                   className="p-2"
                   gradientSize={100}
@@ -64,7 +66,7 @@ export const Projects = () => {
       <AnimationContainer animation="slide-up" delay={0.2} className="mt-6">
         <Link href="/projects">
           <Button variant="secondary" size="sm">
-            View more
+            {localized['projects-view-more']}
             <ArrowRightIcon className="size-4 ml-1.5" />
           </Button>
         </Link>

@@ -1,6 +1,9 @@
+"use client";
+
 import { LuSearch } from "react-icons/lu";
 import { Input } from "../ui/Input";
 import AnimationContainer from "./AnimationContainer";
+import { useLocalization } from "@/providers/localization-provider";
 
 interface Props {
   searchQuery: string;
@@ -8,6 +11,8 @@ interface Props {
 }
 
 const Searchbar = ({ searchQuery, handleSearch }: Props) => {
+  const { localized } = useLocalization();
+
   return (
     <AnimationContainer customClassName="w-full flex items-center justify-center">
       <div className="relative w-full">
@@ -15,7 +20,7 @@ const Searchbar = ({ searchQuery, handleSearch }: Props) => {
 
         <Input
           type="text"
-          placeholder="Search for a blog post"
+          placeholder={localized["searchbar-placeholder"]}
           value={searchQuery}
           onChange={(e) => handleSearch(e.target.value)}
           className="w-full pl-10"
