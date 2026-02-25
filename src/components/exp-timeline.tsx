@@ -56,5 +56,18 @@ const TimeLineItemDescription = ({
   children: React.ReactNode;
 }) => <p className="text-base text-neutral-200">{children}</p>;
 
+const TimeLineItemAchievements = ({
+  items,
+}: {
+  items: string[];
+}) => (
+  <ul className="list-disc list-inside text-base text-neutral-200 space-y-1 mt-2">
+    {items.map((item, i) => (
+      <li key={i}>{item}</li>
+    ))}
+  </ul>
+);
+
 TimeLineItem.Title = TimeLineItemTitle;
 TimeLineItem.Description = TimeLineItemDescription;
+TimeLineItem.Achievements = TimeLineItemAchievements;

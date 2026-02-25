@@ -1,43 +1,53 @@
 'use client'
 
-import { TimeLine, TimeLineItem } from "./exp-timeline"
-import { useLocalization } from "@/providers/localization-provider"
+import { format, parseISO } from 'date-fns'
+import type { Locale } from 'date-fns/locale'
+import { TimeLine, TimeLineItem } from './exp-timeline'
+import { useLocalization } from '@/providers/localization-provider'
+import { data } from '@/data'
 
-const experienceIds = [
-  { id: "atento", current: true },
-  { id: "breaker19", current: false },
-  { id: "fetchly", current: false },
-  { id: "noclaf", current: false },
-  { id: "portlouis", current: false },
-  { id: "freelance", current: false },
-] as const
+function formatMonthYear(ym: string, locale: Locale) {
+  const iso = ym.length === 7 ? `${ym}-01` : ym
+  return format(parseISO(iso), 'MMM yyyy', { locale })
+}
 
 export const Experience = () => {
-  const { localized } = useLocalization()
+  const { locale, localizer, localized } = useLocalization()
+  const experiences = data.experiences
 
   return (
     <div className="w-full relative pt-10 pb-20">
       <TimeLine>
-        {experienceIds.map((item, i) => (
-          <TimeLineItem
-            key={item.id}
-            active={item.current}
-            last={experienceIds.length - 1 === i}
-          >
-            <TimeLineItem.Title>
-              <span className="font-medium transition-all hover:text-white hover:underline hover:underline-offset-2">
-                {localized[`experience-${item.id}-title` as keyof typeof localized]}
-              </span>{" "}
-              •{" "}
-              <span className="text-neutral-200">
-                {localized[`experience-${item.id}-period` as keyof typeof localized]}
-              </span>
-            </TimeLineItem.Title>
-            <TimeLineItem.Description>
-              {localized[`experience-${item.id}-description` as keyof typeof localized]}
-            </TimeLineItem.Description>
-          </TimeLineItem>
-        ))}
+        {experiences.map((experience, i) => {
+          const startFormatted = formatMonthYear(experience.startDate, localizer)
+          const endLabel = experience.current
+            ? localized['experience-date-current' as keyof typeof localized]
+            : experience.endDate
+              ? formatMonthYear(experience.endDate, localizer)
+              : null
+          const period = endLabel ? `${startFormatted} - ${endLabel}` : startFormatted
+
+          return (
+            <TimeLineItem
+              key={experience.id}
+              active={experience.current}
+              last={experiences.length - 1 === i}
+            >
+              <TimeLineItem.Title>
+                <span className="font-medium transition-all hover:text-white hover:underline hover:underline-offset-2">
+                  {experience.title[locale]}
+                </span>
+              </TimeLineItem.Title>
+              <p className="text-neutral-200 text-sm -mt-0.5">
+                {experience.company[locale]} — {period}
+              </p>
+              <TimeLineItem.Description>
+                {experience.description[locale]}
+              </TimeLineItem.Description>
+              <TimeLineItem.Achievements items={experience.achievements[locale]} />
+            </TimeLineItem>
+          )
+        })}
       </TimeLine>
     </div>
   )

@@ -69,6 +69,11 @@
     "en-US": "I am a passionate software developer and designer dedicated to crafting exceptional digital experiences. With expertise in both development and design, I bring a unique perspective to every project, ensuring seamless functionality meets stunning aesthetics. My approach combines clean code architecture with intuitive user interfaces, creating solutions that not only work flawlessly but also delight users. I specialize in building responsive web applications with React and creating cross-platform mobile experiences using React Native. When I'm not coding, you'll find me designing sleek user interfaces in Figma, always striving to bridge the gap between functionality and beautiful design. Let's build something amazing together!",
     "es-ES": "Soy un desarrollador de software y diseñador apasionado dedicado a crear experiencias digitales excepcionales. Con experiencia en desarrollo y diseño, aporto una perspectiva única a cada proyecto, asegurando que la funcionalidad y la estética se encuentren de forma fluida. Mi enfoque combina arquitectura de código limpio con interfaces intuitivas, creando soluciones que no solo funcionan a la perfección sino que también deleitan a los usuarios. Me especializo en aplicaciones web responsivas con React y experiencias móviles multiplataforma con React Native. Cuando no estoy programando, me encontrarás diseñando interfaces en Figma, siempre buscando unir funcionalidad y diseño. ¡Construyamos algo increíble juntos!"
   },
+  "experience-date-current": {
+    "pt-BR": "Atual",
+    "en-US": "Present",
+    "es-ES": "Actual"
+  },
   "experience-atento-title": {
     "pt-BR": "Engenheiro de Software na Atento",
     "en-US": "Software Engineer at Atento",
