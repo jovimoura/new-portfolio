@@ -40,15 +40,18 @@ const DATA = {
       },
       resume: {
         nameKey: "nav-resume" as const,
-        url: "/me.pdf",
+        url: "/john-moura-resume-pt.pdf", // base; overridden by locale in component
         icon: FileTextIcon,
       },
     },
   },
 };
 
+const getResumeUrl = (locale: string) =>
+  locale === "pt-BR" ? "/john-moura-resume-pt.pdf" : "/john-moura-resume-en.pdf";
+
 export const Navbar = () => {
-  const { localized } = useLocalization();
+  const { localized, locale } = useLocalization();
 
   return (
     <header className="z-[999] flex justify-center items-center w-full fixed bottom-6 inset-x-0 cursor-none">
@@ -84,7 +87,11 @@ export const Navbar = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link
-                      href={social.url!}
+                      href={
+                        name === "resume"
+                          ? getResumeUrl(locale)
+                          : social.url!
+                      }
                       target="_blank"
                       aria-label={localized[social.nameKey]}
                       className={cn(

@@ -54,20 +54,6 @@ export function LangSwitcher() {
             </Avatar>
           </ToggleGroupItem>
 
-          <ToggleGroupItem
-            type="button"
-            name="locale"
-            value="es-ES"
-            className={`size-9 rounded-full transition-opacity ${
-              locale !== "es-ES" ? "opacity-50" : ""
-            }`}
-          >
-            <Avatar className="size-7">
-              <AvatarImage fetchPriority="high" src="/es.png" />
-              <AvatarFallback>ES</AvatarFallback>
-            </Avatar>
-          </ToggleGroupItem>
-
           <TooltipContent>
             <p>Select your language</p>
           </TooltipContent>
