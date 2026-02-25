@@ -1,3 +1,5 @@
+"use client";
+
 import { Project as ProjectProps } from "@/types";
 import { Badge } from "@mantine/core";
 import Link from "next/link";
@@ -6,6 +8,7 @@ import { TbExternalLink } from "react-icons/tb";
 import { Button } from "../ui/Button";
 import Image from "next/image";
 import Icons from "../ui/icons";
+import { useLocalization } from "@/providers/localization-provider";
 
 const techStackIcons: { [key: string]: keyof typeof Icons } = {
   "next.js": "nextjs",
@@ -56,6 +59,10 @@ interface Props {
 }
 
 const Card = ({ project }: Props) => {
+  const { localized } = useLocalization();
+  const title = localized[`project-${project.id}-title` as keyof typeof localized] ?? project.title ?? project.id;
+  const description = localized[`project-${project.id}-description` as keyof typeof localized] ?? project.description ?? "";
+
   return (
     <div className="flex-col items-start p-4 lg:p-5">
       <div className="flex flex-col items-start space-y-2">
@@ -63,13 +70,11 @@ const Card = ({ project }: Props) => {
           className="rounded-2xl w-full"
           width={295}
           height={160}
-          alt={`${project.title}-image`}
+          alt={`${title}-image`}
           src={project?.banner}
         />
-        <h4 className="text-lg font-medium text-neutral-100">
-          {project?.title}
-        </h4>
-        <p className="text-sm text-neutral-300">{project?.description}</p>
+        <h4 className="text-lg font-medium text-neutral-100">{title}</h4>
+        <p className="text-sm text-neutral-300">{description}</p>
         <div className="flex flex-col items-start justify-start space-y-4 w-full">
           <div className="flex items-center justify-start flex-wrap gap-2">
             {project?.stack?.map((item, index) => (
@@ -92,13 +97,13 @@ const Card = ({ project }: Props) => {
             <Link href={project.github} target="_blank">
               <Button variant="outline" size="sm">
                 <SiGithub className="w-5 h-5" />
-                <span className="ml-2">Github</span>
+                <span className="ml-2">{localized["btn-github"]}</span>
               </Button>
             </Link>
             <Link href={project.view} target="_blank">
               <Button variant="outline" size="sm">
                 <TbExternalLink className="w-5 h-5" />
-                <span className="ml-2">View</span>
+                <span className="ml-2">{localized["btn-view"]}</span>
               </Button>
             </Link>
           </div>

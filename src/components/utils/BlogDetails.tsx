@@ -1,26 +1,29 @@
+"use client";
+
 import { BlogProps } from "@/types";
 import moment from "moment";
-import { IoMdTime } from "react-icons/io";
-import { IoEyeOutline } from "react-icons/io5";
+import { ArrowLeftIcon, ClockIcon } from "lucide-react";
 import Link from "next/link";
 
 import MarkdownRenderer from "./MarkdownRenderer";
 import { AnimationContainer } from "../animation-container";
-import { ArrowLeftIcon, ClockIcon } from "lucide-react";
 import { Button } from "../ui/Button";
+import { useLocalization } from "@/providers/localization-provider";
 
 interface Props {
   blog: BlogProps;
 }
 
 const BlogDetails = ({ blog }: Props) => {
+  const { localized } = useLocalization();
+
   return (
     <div className="flex flex-col w-full">
       <AnimationContainer>
         <Link href="/blog">
           <Button size="sm" variant="secondary">
             <ArrowLeftIcon className="size-4 mr-1.5" />
-            Back
+            {localized["blog-details-back"]}
           </Button>
         </Link>
       </AnimationContainer>
@@ -30,7 +33,7 @@ const BlogDetails = ({ blog }: Props) => {
           {blog?.title}
         </h2>
         <p className="text-sm text-neutral-400 font-normal mt-4">
-          Written by John Moura on{" "}
+          {localized["blog-details-written-by"]}{" "}
           {moment(blog?.publishedAt).format("DD MMM YYYY")}
         </p>
         <div className="flex flex-row items-center mt-6">

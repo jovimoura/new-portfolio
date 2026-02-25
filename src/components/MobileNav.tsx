@@ -6,8 +6,10 @@ import { Squeeze as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/Button";
+import { useLocalization } from "@/providers/localization-provider";
 
 const MobileNav = () => {
+  const { localized } = useLocalization();
   const MotionButton = motion(Button);
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -66,7 +68,7 @@ const MobileNav = () => {
               <ul className="flex flex-col items-start w-full px-6 py-3 pt-16 space-y-3">
                 {links?.map((link, index) => (
                   <motion.li
-                    key={index}
+                    key={link.nameKey}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
@@ -80,7 +82,7 @@ const MobileNav = () => {
                     className="w-full px-4 py-2 text-lg font-normal text-white transition transform rounded-md cursor-pointer text-start active:scale-95 hover:bg-neutral-900 active:opacity-80"
                   >
                     <Link href={link.hash} className="w-full text-start">
-                      {link.name}
+                      {localized[link.nameKey]}
                     </Link>
                   </motion.li>
                 ))}

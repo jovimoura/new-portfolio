@@ -15,14 +15,14 @@ const ProjectCards = () => {
         <>
           {data &&
             data?.map((project: ProjectProps, index) => (
-              <AnimationContainer key={project.title} delay={0.2 * index + 0.1}>
+              <AnimationContainer key={project.id} delay={0.2 * index + 0.1}>
                 <MagicCard
                   className="p-2"
                   gradientSize={100}
                   gradientFrom="rgba(14,165,233,1)"
                   gradientTo="rgba(59,130,246,1)"
                 >
-                  <Card key={project.title} project={project} />
+                  <Card key={project.id} project={project} />
                 </MagicCard>
               </AnimationContainer>
             ))}

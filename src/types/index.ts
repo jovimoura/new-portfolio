@@ -11,13 +11,14 @@ export interface TimelineItemProps {
 }
 
 export interface Project {
-    title: string;
-    description: string;
+    id: string;
+    title?: string;
+    description?: string;
     github: string;
     view: string;
     stack?: string[];
     banner: string;
-    image: {
+    image?: {
         url: string;
     }[];
 };

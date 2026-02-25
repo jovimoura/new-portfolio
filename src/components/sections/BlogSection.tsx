@@ -9,8 +9,10 @@ import Heading from "../utils/Heading";
 import Searchbar from "../utils/Searchbar";
 import { Wrapper } from "../wrapper";
 import { AnimationContainer } from "../animation-container";
+import { useLocalization } from "@/providers/localization-provider";
 
 const BlogSection = () => {
+  const { localized } = useLocalization();
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [blogs, setBlogs] = useState<BlogProps[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -52,13 +54,10 @@ const BlogSection = () => {
   return (
     <Wrapper>
       <div className="flex flex-col items-start w-full mt-0 lg:mt-8">
-        <Heading title="Blog" />
+        <Heading title={localized["blog-title"]} />
         <AnimationContainer className="w-full flex flex-col mb-8">
           <p className="text-base text-justify lg:leading-8 text-foreground/80">
-            Welcome to my digital notebook! Here I write about the interesting
-            problems I've solved, share tips and tricks I wish I knew earlier,
-            and document my journey through the world of software development.
-            No fancy jargon, just honest experiences and helpful insights.
+            {localized["blog-intro"]}
           </p>
         </AnimationContainer>
 
