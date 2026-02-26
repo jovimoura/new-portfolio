@@ -468,5 +468,10 @@
     "pt-BR": "Currículo",
     "en-US": "Resume",
     "es-ES": "Currículum"
+  },
+  "select-your-language": {
+    "pt-BR": "Selecione seu idioma",
+    "en-US": "Select your language",
+    "es-ES": "Selecciona tu idioma"
   }
 }

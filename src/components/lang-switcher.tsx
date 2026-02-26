@@ -11,7 +11,7 @@ import { useLocalization, type LocaleOption } from "@/providers/localization-pro
 import { toggleLocalization } from "@/actions";
 
 export function LangSwitcher() {
-  const { locale, setLocale } = useLocalization();
+  const { locale, setLocale, localized } = useLocalization();
 
   return (
     <Tooltip>
@@ -55,7 +55,7 @@ export function LangSwitcher() {
           </ToggleGroupItem>
 
           <TooltipContent>
-            <p>Select your language</p>
+            <p>{localized['select-your-language']}</p>
           </TooltipContent>
         </ToggleGroup>
       </TooltipTrigger>
