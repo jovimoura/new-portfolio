@@ -224,35 +224,15 @@
     "en-US": "ContrateAI simplifies the way that you create contract with artificial intelligence, allowing interactions for content comprehension.",
     "es-ES": "ContrateAI simplifica la forma de crear contratos con inteligencia artificial, permitiendo interacciones para la comprensión del contenido."
   },
-  "project-mylunch-title": {
-    "pt-BR": "My Lunch",
-    "en-US": "My Lunch",
-    "es-ES": "My Lunch"
+  "project-mangajobs-title": {
+    "pt-BR": "MangaJobs",
+    "en-US": "MangaJobs",
+    "es-ES": "MangaJobs"
   },
-  "project-mylunch-description": {
-    "pt-BR": "É um delivery de comida simples feito para ajudar pequenos negócios de alimentação.",
-    "en-US": "Its a simple food delivery made to help small food businesses.",
-    "es-ES": "Es un delivery de comida simple hecho para ayudar a pequeños negocios de alimentación."
-  },
-  "project-easyai-title": {
-    "pt-BR": "EasyAI",
-    "en-US": "EasyAI",
-    "es-ES": "EasyAI"
-  },
-  "project-easyai-description": {
-    "pt-BR": "Uma plataforma de IA onde você encontra as principais funcionalidades de Inteligência Artificial: geração de imagens, criação de texto e revisão de código.",
-    "en-US": "A AI Platform where you can find the main features of Artificial Intelligence, such as image generation, text creation, and code review.",
-    "es-ES": "Una plataforma de IA donde puedes encontrar las principales funciones de Inteligencia Artificial: generación de imágenes, creación de texto y revisión de código."
-  },
-  "project-jmshop-title": {
-    "pt-BR": "J.M. Shop",
-    "en-US": "J.M. Shop",
-    "es-ES": "J.M. Shop"
-  },
-  "project-jmshop-description": {
-    "pt-BR": "É um e-commerce fictício que desenvolvi para vender iPhones.",
-    "en-US": "Its a fake ecommerce that I developed to sell iphones.",
-    "es-ES": "Es un e-commerce ficticio que desarrollé para vender iPhones."
+  "project-mangajobs-description": {
+    "pt-BR": "MangaJobs é uma plataforma de vagas de emprego.",
+    "en-US": "MangaJobs is a job listings platform.",
+    "es-ES": "MangaJobs es una plataforma de ofertas de empleo."
   },
   "skills-title": {
     "pt-BR": "Habilidades e Ferramentas",

@@ -32,29 +32,13 @@ export const projects = [
     banner: "/projects/contrateai.png",
   },
   {
-    id: "mylunch",
-    github: "https://github.com/jovimoura/my-lunch",
-    view: "https://github.com/jovimoura/my-lunch",
-    stack: ["react-native", "tailwindcss", "typescript", "expo"],
+    id: "mangajobs",
+    github: "https://www.mangajobs.com/",
+    view: "https://www.mangajobs.com/",
+    stack: ["nextjs", "tailwindcss", "typescript", "prisma", "postgresql", "shadcn/ui"],
     image: [{ url: "asdlasda" }],
-    banner: "/projects/meu-lanche.png",
-  },
-  {
-    id: "easyai",
-    github: "https://github.com/jovimoura/my-lunch",
-    view: "https://github.com/jovimoura/my-lunch",
-    stack: ["nextjs", "tailwindcss", "typescript", "trpc", "prisma", "mongodb", "openai"],
-    image: [{ url: "asdlasda" }],
-    banner: "/projects/easyai.png",
-  },
-  {
-    id: "jmshop",
-    github: "https://github.com/jovimoura/my-lunch",
-    view: "https://github.com/jovimoura/my-lunch",
-    stack: ["react", "nodejs", "mongodb", "graphql", "tailwindcss", "typescript"],
-    image: [{ url: "asdlasda" }],
-    banner: "/projects/jm-shop.png",
-  },
+    banner: "/projects/mangajobs.png",
+  }
 ];
 
 export const tags = [
