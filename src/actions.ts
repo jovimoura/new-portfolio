@@ -12,7 +12,8 @@ const preferencesSchema = z.object({
 export type Preferences = z.infer<typeof preferencesSchema>
 
 export async function getPreferences<T = IronSession<Preferences>>(selector?: keyof Preferences) {
-  const preferences = await getIronSession<Preferences>(cookies(), {
+  const cookieStore = await cookies()
+  const preferences = await getIronSession<Preferences>(cookieStore, {
     ttl: 0,
     password: process.env.COOKIES_SECRET || '',
     cookieName: 'preferences'

@@ -26,6 +26,12 @@ export const Experience = () => {
               ? formatMonthYear(experience.endDate, localizer)
               : null
           const period = endLabel ? `${startFormatted} - ${endLabel}` : startFormatted
+          const title = experience.title[locale] ?? experience.title['en-US']
+          const company = experience.company[locale] ?? experience.company['en-US']
+          const description =
+            experience.description[locale] ?? experience.description['en-US']
+          const achievements =
+            experience.achievements[locale] ?? experience.achievements['en-US'] ?? []
 
           return (
             <TimeLineItem
@@ -35,16 +41,16 @@ export const Experience = () => {
             >
               <TimeLineItem.Title>
                 <span className="font-medium transition-all hover:text-white hover:underline hover:underline-offset-2">
-                  {experience.title[locale]}
+                  {title}
                 </span>
               </TimeLineItem.Title>
               <p className="text-neutral-200 text-sm -mt-0.5">
-                {experience.company[locale]} — {period}
+                {company} — {period}
               </p>
               <TimeLineItem.Description>
-                {experience.description[locale]}
+                {description}
               </TimeLineItem.Description>
-              <TimeLineItem.Achievements items={experience.achievements[locale]} />
+              <TimeLineItem.Achievements items={achievements} />
             </TimeLineItem>
           )
         })}

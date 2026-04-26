@@ -24,12 +24,11 @@ export const Hero = () => {
       >
         <div className="size-32 rounded-full bg-[#050505] mx-auto overflow-hidden group border-2 border-transparent hover:border-border transition-all duration-300">
           <Image
-            src="/images/photo1.jpeg"
+            src="/images/photo.jpeg"
             alt="hero"
             width={128}
             height={128}
             priority={true}
-            quality={85}
             className="size-full object-cover object-top rounded-full grayscale group-hover:grayscale-0 group-hover:scale-110 group-hover:border-primary/80 transition-all duration-300"
           />
         </div>
