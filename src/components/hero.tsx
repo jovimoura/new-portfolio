@@ -26,6 +26,7 @@ export const Hero = () => {
           <Image
             src="/images/photo.jpeg"
             alt="hero"
+            
             width={128}
             height={128}
             priority={true}
